@@ -1,0 +1,17 @@
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\bin\Debug\netcoreapp3.1\WpfApp4.exe
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\bin\Debug\netcoreapp3.1\WpfApp4.deps.json
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\bin\Debug\netcoreapp3.1\WpfApp4.runtimeconfig.json
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\bin\Debug\netcoreapp3.1\WpfApp4.runtimeconfig.dev.json
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\bin\Debug\netcoreapp3.1\WpfApp4.dll
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\bin\Debug\netcoreapp3.1\WpfApp4.pdb
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\WpfApp4.csprojAssemblyReference.cache
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\WpfApp4_MarkupCompile.cache
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\WpfApp4_MarkupCompile.lref
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\WpfApp4.g.resources
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\WpfApp4.AssemblyInfoInputs.cache
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\WpfApp4.AssemblyInfo.cs
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\WpfApp4.dll
+C:\Users\beara\source\repos\WpfApp4\WpfApp4\obj\Debug\netcoreapp3.1\WpfApp4.pdb

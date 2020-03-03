@@ -1,0 +1,146 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="PresentationOptions"
+        Title="MainWindow" Height="450" Width="450"
+        >
+
+    <Window.Resources>
+        <PathGeometry 
+            x:Key="AnimationPath01" 
+                      Figures="M 10,100 L 110,100 L 60,0 L 10,100"   
+      PresentationOptions:Freeze="True" />
+
+        <PathGeometry 
+            x:Key="AnimationPath02" 
+                      Figures="M 110,100 L 60,0 L 10,100 L 110,100"   
+      PresentationOptions:Freeze="True" />
+
+        <PathGeometry 
+            x:Key="AnimationPath03" 
+                      Figures="M 60,0 L 10,100 L 110,100 L 60,0"   
+      PresentationOptions:Freeze="True" />
+
+    </Window.Resources>
+
+    <Grid Height="337" Margin="297,0,104,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="128*"/>
+            <RowDefinition Height="91*"/>
+            <RowDefinition Height="116*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Name="Rectangle1" Width="30" Height="30" Fill="Blue" Margin="-177,13,182,48" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <TranslateTransform x:Name="AnimatedTranslateTransform"  />
+            </Rectangle.RenderTransform>
+
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Path.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+
+                            <!-- Animates the rectangle horizotally along the path. -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="AnimatedTranslateTransform"
+                Storyboard.TargetProperty="X"
+                PathGeometry="{StaticResource AnimationPath01}"
+  
+                                Source="X" 
+                Duration="0:0:4"  />
+
+
+                            <!-- Animates the rectangle vertically along the path. -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="AnimatedTranslateTransform"
+                Storyboard.TargetProperty="Y"
+                PathGeometry="{StaticResource AnimationPath01}"
+                Source="Y" 
+                Duration="0:0:4"  />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+
+
+        </Rectangle>
+
+
+        <Rectangle Name="Rectangle2" Width="30" Height="30" Fill="Blue" Margin="-177,13,182,48" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <TranslateTransform x:Name="AnimatedTranslateTransform2"  />
+            </Rectangle.RenderTransform>
+
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Path.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+
+                            <!-- Animates the rectangle horizotally along the path. -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="AnimatedTranslateTransform2"
+                Storyboard.TargetProperty="X"
+                  PathGeometry="{StaticResource AnimationPath02}"              
+                Source="X" 
+                Duration="0:0:4"  />
+
+                            <!-- Animates the rectangle vertically along the path. -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="AnimatedTranslateTransform2"
+                Storyboard.TargetProperty="Y"
+                 PathGeometry="{StaticResource AnimationPath02}"
+               
+                Source="Y" 
+                Duration="0:0:4"  />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+
+
+        </Rectangle>
+
+        <Rectangle Name="Rectangle3" Width="30" Height="30" Fill="Blue" Margin="-177,13,182,48" Grid.Row="1">
+            <Rectangle.RenderTransform>
+                <TranslateTransform x:Name="AnimatedTranslateTransform3"  />
+            </Rectangle.RenderTransform>
+
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Path.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+
+                            <!-- Animates the rectangle horizotally along the path. -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="AnimatedTranslateTransform3"
+                Storyboard.TargetProperty="X"
+                  PathGeometry="{StaticResource AnimationPath03}"              
+                Source="X" 
+                Duration="0:0:4"  />
+
+                            <!-- Animates the rectangle vertically along the path. -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="AnimatedTranslateTransform3"
+                Storyboard.TargetProperty="Y"
+                 PathGeometry="{StaticResource AnimationPath03}"
+               
+                Source="Y" 
+                Duration="0:0:4"  />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+
+
+        </Rectangle>
+
+
+
+    </Grid>
+</Window>
+
+ 
